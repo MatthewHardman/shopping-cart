@@ -1,0 +1,114 @@
+.header {
+  position: static;
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header > a {
+  color: black;
+}
+
+.itemsContainer {
+  position: static;
+  z-index: 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  height: 100%;
+  margin: auto;
+  margin-top: 6rem;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#showCartButton:hover {
+  cursor: pointer;
+}
+
+#closeCartButton:hover {
+  cursor: pointer;
+}
+
+#closeCartButton {
+  margin: 15px;
+  width: 30px;
+  display: inline-block;
+}
+
+#checkoutButton {
+  height: 40px;
+  margin: 15px;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#addToCart {
+  background-color: white;
+  color: black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#addToCart:hover {
+  background-color: green;
+  color: white;
+}
+
+#removeFromCart {
+  background-color: white;
+  color: black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0px;
+}
+
+#removeFromCart:hover {
+  background-color: #d11a2a;
+  color: white;
+}
+
+.sidePanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+  transition: 0.5s;
+  border: 3px solid black;
+  border-right: 0px;
+  overflow-y: scroll;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.itemTable {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.productName {
+  width: 20%;
+}
+
+#totalPrice {
+  margin: 20px;
+  margin-right: 50px;
+  font-weight: bold;
+  font-size: large;
+  text-align: end;
+}
