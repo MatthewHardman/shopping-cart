@@ -17,7 +17,7 @@ const Homepage = () => {
       <div id="footer">
         <div>Made by Matthew Hardman</div>
         <div>
-          <a href="/#">
+          <a href="https://github.com/MatthewHardman/shopping-cart/tree/main">
             <FaGithub />
           </a>
         </div>
